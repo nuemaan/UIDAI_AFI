@@ -1,0 +1,15 @@
+pandas
+numpy
+pyarrow
+openpyxl
+python-dateutil
+matplotlib
+seaborn
+jupyterlab
+scikit-learn
+rapidfuzz
+ruamel.yaml
+ruptures
+rapidfuzz
+fpdf
+

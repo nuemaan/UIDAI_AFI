@@ -1,0 +1,14 @@
+# Data & outputs (DO NOT TRACK)
+data/
+outputs/
+*.csv
+*.zip
+
+# Mac junk
+.DS_Store
+
+# Python
+__pycache__/
+venv/
+.env
+

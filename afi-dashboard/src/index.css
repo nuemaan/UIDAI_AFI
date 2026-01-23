@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 44% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 44% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 173 80% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+
+    --friction-low: 142 76% 36%;
+    --friction-medium: 38 92% 50%;
+    --friction-high: 0 72% 51%;
+
+    --chart-1: 24 95% 53%;
+    --chart-2: 173 80% 40%;
+    --chart-3: 217 91% 60%;
+    --chart-4: 262 83% 58%;
+    --chart-5: 142 76% 36%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 17%;
+    --ring: 24 95% 53%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 85%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 15%;
+    --sidebar-ring: 24 95% 53%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(24 95% 53%), hsl(38 92% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 8%), hsl(222 44% 12%));
+    --gradient-friction: linear-gradient(90deg, hsl(142 76% 36%), hsl(38 92% 50%), hsl(0 72% 51%));
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
+  }
+}
+
+@layer components {
+  /* Stat cards */
+  .stat-card {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300;
+  }
+
+  .stat-card:hover {
+    @apply border-primary/30;
+    box-shadow: 0 0 30px -10px hsl(var(--primary) / 0.2);
+  }
+
+  .friction-low {
+    @apply bg-success/20 text-success border-success/30;
+  }
+
+  .friction-medium {
+    @apply bg-warning/20 text-warning border-warning/30;
+  }
+
+  .friction-high {
+    @apply bg-destructive/20 text-destructive border-destructive/30;
+  }
+
+  .chart-container {
+    @apply bg-card border border-border rounded-xl p-6;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 40px -10px hsl(var(--primary) / 0.4);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 40px -10px hsl(var(--accent) / 0.4);
+  }
+
+  .data-table {
+    @apply w-full;
+  }
+
+  .data-table th {
+    @apply text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground pb-4;
+  }
+
+  .data-table td {
+    @apply py-4 border-t border-border;
+  }
+
+  .data-table tr:hover td {
+    @apply bg-muted/30;
+  }
+
+  .section-header {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  .section-subheader {
+    @apply text-muted-foreground mt-1;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .display-number {
+    @apply text-4xl font-bold tracking-tight;
+  }
+
+  .animate-subtle-pulse {
+    animation: subtlePulse 3s ease-in-out infinite;
+  }
+
+  @keyframes subtlePulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+
+  .friction-gradient {
+    background: linear-gradient(90deg, 
+      hsl(var(--friction-low)) 0%, 
+      hsl(var(--friction-medium)) 50%, 
+      hsl(var(--friction-high)) 100%
+    );
+  }
+}
