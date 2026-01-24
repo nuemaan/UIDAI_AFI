@@ -2,7 +2,6 @@ Aadhaar Friction Index (AFI)
 
 Measuring Citizen Difficulty in Aadhaar Enrolment & Updates Using Public Data and Interpretable AI
 
-⸻
 
 Overview
 
@@ -12,7 +11,6 @@ This repository introduces the Aadhaar Friction Index (AFI) — a reproducible, 
 
 AFI does not predict individuals and does not use personal data. Instead, it uses aggregated public data to surface systemic operational stress, enabling evidence-based governance, research, and accountability.
 
-⸻
 
 What Problem Does AFI Solve?
 
@@ -29,7 +27,6 @@ AFI fills this gap by transforming UIDAI data into:
 	•	District typologies based on observed behaviour
 	•	Early-warning signals for rising administrative stress
 
-⸻
 
 Core Outputs
 
@@ -48,7 +45,6 @@ Visualizes national, state, and district-level patterns with filters and compari
 	4.	Reproducible Analysis Pipeline
 Clean, modular Python scripts covering data cleaning, feature engineering, validation, clustering, and visualization.
 
-⸻
 
 Data Sources
 
@@ -66,7 +62,6 @@ UIDAI Aadhaar Update Dataset (Demographic & Biometric)
 
 No scraped, personal, or proprietary data is used.
 
-⸻
 
 Methodology (High Level)
 	1.	Data Cleaning & Standardisation
@@ -90,30 +85,6 @@ Methodology (High Level)
 	•	Stability analysis
 	•	Sanity checks against known administrative patterns
 
-⸻
-
-Repository Structure
-
-├── src/
-│   ├── compute_afi_advanced.py        # AFI computation pipeline
-│   ├── validate_afi.py                # Sanity checks & validation
-│   ├── compute_afi_typologies.py      # Unsupervised district typologies
-│   ├── make_visuals_final.py          # AFI visualisations
-│   ├── make_typology_visuals.py       # Typology plots & tables
-│
-├── outputs/
-│   ├── afi_summary.csv
-│   ├── merged_for_afi.csv
-│   ├── afi_with_typologies.csv
-│
-├── dashboard/
-│   ├── Next.js dashboard prototype
-│
-├── images/
-│
-
-
-⸻
 
 Dashboard (MVP)
 
@@ -125,14 +96,11 @@ The dashboard is a analytical interface that displays:
 	•	Typology composition by state
 
 
-⸻
-
 Ethical & Privacy Considerations
 	•	No individual-level data is used
 	•	No predictions about individuals
 	•	All analysis is performed on aggregated, anonymized public datasets
 
-⸻
 
 Future Work
 	•	Lightweight trend-based early-warning alerts
@@ -140,7 +108,6 @@ Future Work
 	•	Policy briefs and administrative dashboards
 	•	Adaptation of AFI methodology to other Digital Public Infrastructure datasets
 
-⸻
 
 Author
 
