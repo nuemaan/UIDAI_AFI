@@ -1,9 +1,9 @@
-Aadhaar Friction Index (AFI)
+**Aadhaar Friction Index (AFI)**
 
 Measuring Citizen Difficulty in Aadhaar Enrolment & Updates Using Public Data and Interpretable AI
 
 
-Overview
+**Overview**
 
 India’s Aadhaar system generates large volumes of enrolment and update data every month. While aggregate counts are publicly available, there is no standard, district-level way to quantify how difficult it is for citizens to enrol or maintain their Aadhaar details.
 
@@ -12,7 +12,7 @@ This repository introduces the Aadhaar Friction Index (AFI) — a reproducible, 
 AFI does not predict individuals and does not use personal data. Instead, it uses aggregated public data to surface systemic operational stress, enabling evidence-based governance, research, and accountability.
 
 
-What Problem Does AFI Solve?
+**What Problem Does AFI Solve?**
 
 Current Aadhaar data answers “how many” enrolments or updates occurred.
 AFI answers “where citizens are facing disproportionate difficulty — and why.”
@@ -28,7 +28,7 @@ AFI fills this gap by transforming UIDAI data into:
 	•	Early-warning signals for rising administrative stress
 
 
-Core Outputs
+**Core Outputs**
 
 This project produces:
 	1.	Aadhaar Friction Index (AFI)
@@ -46,16 +46,16 @@ Visualizes national, state, and district-level patterns with filters and compari
 Clean, modular Python scripts covering data cleaning, feature engineering, validation, clustering, and visualization.
 
 
-Data Sources
+**Data Sources**
 
 All data used is public, anonymized, and aggregated.
 
-UIDAI Aadhaar Enrolment Dataset
+**UIDAI Aadhaar Enrolment Dataset**
 
 . Source: UIDAI / data.gov.in
 . Content: Monthly enrolments by state, district, pincode, age group
 
-UIDAI Aadhaar Update Dataset (Demographic & Biometric)
+**UIDAI Aadhaar Update Dataset (Demographic & Biometric)**
 
 . Source: UIDAI / data.gov.in
 . Content: Monthly updates by geography and age group
@@ -63,7 +63,7 @@ UIDAI Aadhaar Update Dataset (Demographic & Biometric)
 No scraped, personal, or proprietary data is used.
 
 
-Methodology (High Level)
+**Methodology (High Level)**
 	1.	Data Cleaning & Standardisation
 	•	Canonical state and district names
 	•	Consistent monthly time indices
@@ -86,7 +86,7 @@ Methodology (High Level)
 	•	Sanity checks against known administrative patterns
 
 
-Dashboard (MVP)
+**Dashboard (MVP)**
 
 The dashboard is a analytical interface that displays:
 	•	AFI distributions and percentiles
@@ -96,19 +96,19 @@ The dashboard is a analytical interface that displays:
 	•	Typology composition by state
 
 
-Ethical & Privacy Considerations
+**Ethical & Privacy Considerations**
 	•	No individual-level data is used
 	•	No predictions about individuals
 	•	All analysis is performed on aggregated, anonymized public datasets
 
 
-Future Work
+**Future Work**
 	•	Lightweight trend-based early-warning alerts
 	•	Integration with public platforms (e.g., AIKosh, data.gov.in)
 	•	Policy briefs and administrative dashboards
 	•	Adaptation of AFI methodology to other Digital Public Infrastructure datasets
 
 
-Author
+**Author**
 
 Developed independently as part of the AI for All Challenge, using public data and open-source tools to improve transparency, governance, and citizen outcomes.
