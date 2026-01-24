@@ -18,11 +18,13 @@ Current Aadhaar data answers “how many” enrolments or updates occurred.
 AFI answers “where citizens are facing disproportionate difficulty — and why.”
 
 Without AFI:
+
 	•	Operational bottlenecks remain hidden inside raw volumes
 	•	Policy responses are reactive rather than targeted
 	•	Researchers and journalists lack a standardized metric for comparison
 
 AFI fills this gap by transforming UIDAI data into:
+
 	•	A single interpretable friction score
 	•	District typologies based on observed behaviour
 	•	Early-warning signals for rising administrative stress
@@ -31,19 +33,20 @@ AFI fills this gap by transforming UIDAI data into:
 **Core Outputs**
 
 This project produces:
+
 	1.	Aadhaar Friction Index (AFI)
-A composite score capturing enrolment pressure, update intensity, biometric stress, volatility, and age-transition mismatch — normalized against the cumulative Aadhaar base.
+	A composite score capturing enrolment pressure, update intensity, biometric stress, volatility, and age-transition mismatch — normalized against the cumulative Aadhaar base.
 	2.	District Typologies (Unsupervised AI)
-Districts are grouped using clustering into practical, interpretable categories:
+	Districts are grouped using clustering into practical, interpretable categories:
 	•	Stable & Low Friction
 	•	High Biometric Friction
 	•	High Load Urban Pressure
 	•	Structurally Stressed Districts
 	•	Demographic Correction Heavy
 	3.	Interactive Dashboard (Prototype)
-Visualizes national, state, and district-level patterns with filters and comparisons.
-	4.	Reproducible Analysis Pipeline
-Clean, modular Python scripts covering data cleaning, feature engineering, validation, clustering, and visualization.
+	Visualizes national, state, and district-level patterns with filters and comparisons.
+	4.	Reproducible Analysis Pipeline 
+	Clean, modular Python scripts covering data cleaning, feature engineering, validation, clustering, and visualization.
 
 
 **Data Sources**
@@ -53,17 +56,20 @@ All data used is public, anonymized, and aggregated.
 **UIDAI Aadhaar Enrolment Dataset**
 
 . Source: UIDAI / data.gov.in
+
 . Content: Monthly enrolments by state, district, pincode, age group
 
 **UIDAI Aadhaar Update Dataset (Demographic & Biometric)**
 
 . Source: UIDAI / data.gov.in
+
 . Content: Monthly updates by geography and age group
 
 No scraped, personal, or proprietary data is used.
 
 
 **Methodology (High Level)**
+
 	1.	Data Cleaning & Standardisation
 	•	Canonical state and district names
 	•	Consistent monthly time indices
@@ -89,23 +95,35 @@ No scraped, personal, or proprietary data is used.
 **Dashboard (MVP)**
 
 The dashboard is a analytical interface that displays:
+
 	•	AFI distributions and percentiles
+	
 	•	State and district rankings
+	
 	•	District typologies
+	
 	•	Temporal trends
+	
 	•	Typology composition by state
 
 
 **Ethical & Privacy Considerations**
+
 	•	No individual-level data is used
+	
 	•	No predictions about individuals
+	
 	•	All analysis is performed on aggregated, anonymized public datasets
 
 
 **Future Work**
+
 	•	Lightweight trend-based early-warning alerts
+	
 	•	Integration with public platforms (e.g., AIKosh, data.gov.in)
+	
 	•	Policy briefs and administrative dashboards
+	
 	•	Adaptation of AFI methodology to other Digital Public Infrastructure datasets
 
 
